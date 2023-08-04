@@ -1,0 +1,185 @@
+@font-face{
+font-family:nagah;
+src:url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+body{
+background:#F9FAFE;
+font-family:nagah;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+gap:50px;
+}
+
+
+.card{
+width:650px;
+display:flex;
+border-radius:25px;
+overflow:hidden;
+background:#fff;
+box-shadow:2px 2px 5px #000;
+}
+
+.col-left , .col-right{
+width:50%;
+padding:30px 15px;
+}
+.col-left{
+background:#4936F2;
+border-radius:25px;
+display:flex;
+flex-direction:column;
+justify-content:space-around;
+align-items:center;
+gap:15px;
+}
+
+.col-left > div:nth-child(1) {
+
+color:lightgray;
+font-size:18px;
+letter-spacing:1.5px;
+}
+
+.col-left > div:nth-child(2){
+background:linear-gradient(#4A23CA , #4734EE);
+width:calc(650px / 4);
+height:calc(650px / 4);
+border-radius:50%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:#aaa;
+}
+
+
+
+.col-left > div:nth-child(2) h2{
+font-size:70px;
+color:#fff;
+}
+
+.col-left > div:nth-child(3) {
+
+color:#fff;
+font-size:28px;
+letter-spacing:1.5px;
+}
+
+
+.col-left > div:nth-child(4) p {
+
+color:#fff;
+font-size:18px;
+line-height:1.4rem;
+text-align:center;
+padding:0 30px;
+}
+
+
+
+
+
+.col-right{
+display:flex;
+flex-direction:column;
+gap:20px;
+
+}
+
+.col-right > div{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 10px;
+border-radius:8px;
+}
+
+
+.col-right > div:nth-child(2){
+background:#FFF6F5;
+}
+
+.col-right > div:nth-child(3){
+background:#FFFBF2;
+}
+
+.col-right > div:nth-child(4){
+background:#F2FBFA;
+}
+
+.col-right > div:nth-child(5){
+background:#F3F3FD;
+}
+.col-right > div:nth-child(6){
+display:flex;
+justify-content:center;
+}
+
+
+.col-right > div:nth-child(2) div:nth-child(1){
+color:#C97477;
+}
+
+.col-right > div:nth-child(3) div:nth-child(1){
+color:#E0A348;
+}
+
+.col-right > div:nth-child(4) div:nth-child(1){
+color:#58B89D;
+}
+
+.col-right > div:nth-child(5) div:nth-child(1){
+color:#525EC0;
+}
+
+.col-right div span{
+color:gray
+}
+
+button{
+background:#303B59;
+width:90%;
+height:40px;
+color:#fff;
+border:none;
+cursor:pointer;
+border-radius:15px;
+transition:.5s;
+}
+button:hover{
+background:#4936F2;
+}
+
+
+@media only screen and (max-width:767px){
+
+body{
+margin:50px 15px;
+}
+.card{
+width:300px;
+flex-direction:column;
+}
+
+.col-left , .col-right{
+width:100%;
+
+}
+
+
+}
+
